@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Homework input</title>
+
+    <script type="text/javascript">
+
+        "use strict";
+
+        const students = [
+
+            ["John", 55],
+
+            ["Lara", 79],
+
+            ["Roy", 97],
+
+            ["Tabitha", 42],
+
+            ["Tim", 81],
+
+            ["Sandra", 96],
+
+        ];
+        
+ 
+    // get sum the first index (second item = [i][1]) from each score value pair
+     
+        let total = 0;
+        let average = 0;
+        console.log(students);
+        
+        for (let i = 0; i < students.length; i++) {
+        	console.log(students[i]);
+			//for (let j = 0; j < students[i].length; j++) {
+			
+		total += students[i][1]; 
+		average = total/students.length;  // get average score
+		
+		
+	// score over 90
+	
+	if(students[i]>=90){
+	console.log(students[i])
+	}
+	else{
+	}	
+	
+	// sorted by score
+	 
+    	students.sort(function(a, b){
+        return a[i] - b[i]
+        });
+        var reversed_students = students.reverse();
+    
+	}
+	
+	console.log(total);
+	console.log(average); 
+	
+	console.log(" Students over 90: ");
+	console.log(students[0][0]);
+	console.log(students[1][0]);
+	
+	console.log(" Students sorted by score: ");
+	console.log(reversed_students);
+	console.log(students[0]);
+	console.log(students[1]);
+	console.log(students[2]);
+	console.log(students[3]);
+	console.log(students[4]);
+    console.log(students[5]);    
+
+
+    </script>
+
+</head>
+
+
+
+<body>
+
+Some content
+
+</body>
+
+</html>
+
